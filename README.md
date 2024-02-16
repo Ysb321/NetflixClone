@@ -8,9 +8,6 @@ Welcome to the Netflix Starting Page Clone! This project is a recreation of the 
 
 **Responsive Layout**: The starting page is fully responsive, ensuring a seamless viewing experience across various devices and screen sizes, from desktops to mobile devices.
 
-
-Customization Options: The clone offers customization options, allowing developers to easily modify the layout, colors, and content to suit their preferences or integrate additional features.
-
 # How to Use:
 
 To explore the Netflix Starting Page Clone:
