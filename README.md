@@ -1,5 +1,5 @@
 # NetflixClone
-The Netflix clone is a stunning web application that mirrors the design, functionality, and user experience of the original Netflix platform. Developed using a combination of HTML, CSS, and JavaScript
+The Netflix Login-page clone is a stunning web application that mirrors the design, functionality, and user experience of the original Netflix platform. Developed using a combination of HTML, CSS, and JavaScript
 Welcome to the Netflix Starting Page Clone! This project is a recreation of the popular streaming platform's starting page, built using HTML, CSS, and JavaScript. With its intuitive design and responsive layout, users can experience a familiar interface while browsing content.
 
 # Key Features:
