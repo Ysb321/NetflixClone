@@ -1,0 +1,780 @@
+@font-face {
+  font-family: "netflix normal sans";
+  src: url("assests/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2");
+}
+
+@font-face {
+  font-family: "netflix bold sans";
+  src: url("assests/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2");
+}
+
+:root {
+  --color: aliceblue;
+  --background: #000;
+  --nf-redcolor: #e50914;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 100;
+}
+
+.phase1 {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.753),
+      rgba(0, 0, 0, 0.479)
+    ),
+    url("assests/desktop/IN-en-20240205-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+.phase1 {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "nv nv nv "
+    "cn cn cn "
+    "in in in ";
+  padding: 0 50px;
+}
+
+.phase1 .navBar {
+  grid-area: nv;
+  /* background-color: aqua; */
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: start;
+  padding: 0 100px;
+  font-family: "netflix normal sans";
+  font-size: larger;
+  padding-bottom: 200px;
+}
+
+.phase1 .phase1-center {
+  grid-area: cn;
+  height: 100%;
+  /* background-color: blueviolet; */
+  text-align: center;
+  display: grid;
+  /* gap: 0px; */
+  padding: 20px;
+  line-height: 20px;
+  font-family: "netflix normal sans";
+  color: var(--color);
+  font-size: x-large;
+  font-weight: 100;
+}
+
+.phase1 .input-btn {
+  grid-area: in;
+  /* background-color: #1d0103; */
+  display: grid;
+  grid-auto-flow: column;
+  width: auto;
+  /* place-content: center; */
+  justify-content: center;
+  gap: 10px;
+  font-family: "netflix normal sans";
+}
+
+.navBtn {
+  display: grid;
+  grid-auto-flow: column;
+  padding: 20px;
+  position: relative;
+  z-index: 0;
+}
+
+.lsvg img {
+  position: absolute;
+  left: 10%;
+  top: 32%;
+  z-index: 10;
+}
+
+.navBtn select {
+  padding: 0 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: #0f0f0fb0;
+  color: var(--color);
+  border: 0;
+  border-radius: 5px;
+  border: 1px solid gray;
+  font-family: "netflix normal sans";
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.navBar select option {
+  cursor: pointer;
+}
+
+.navBtn button {
+  padding: 0px;
+  height: 35px;
+  width: 90px;
+  cursor: pointer;
+  background-color: var(--nf-redcolor);
+  color: var(--color);
+  border: 0;
+  border-radius: 5px;
+  font-family: "netflix normal sans";
+  font-size: 16px;
+}
+
+.phase1-center h1 {
+  font-family: "netflix bold sans";
+}
+
+.input-btn input {
+  width: 100%;
+  min-width: 20%;
+  /* height: 30px;*/
+  height: 10%;
+  cursor: pointer;
+  border: 0;
+  padding: 25px 100px;
+  padding-left: 10px;
+  border-radius: 4px;
+  background-color: #0f0f0fb0;
+  color: var(--color);
+  font-size: larger;
+  border: 1px solid gray;
+}
+
+.input-btn input::placeholder {
+  color: var(--color);
+}
+
+.input-btn button {
+  /* background-color: #1d0103; */
+  /* height: 50px; */
+  height: 19%;
+  width: 100%;
+  /* width: 10vw; */
+  /* padding: 25px 5px;  */
+  padding: 25px 30px;
+  padding-top: 18px;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: var(--nf-redcolor);
+  color: var(--color);
+  border: 0;
+  font-size: larger;
+}
+
+.phase-bottomBar1 {
+  width: 100%;
+  height: 8px;
+  background-color: #232323;
+}
+.phase-bottomBar2 {
+  width: 100%;
+  height: 60px;
+  background-color: var(--background);
+}
+
+.phase2 {
+  background-color: var(--background);
+  /* background-color: #13ff5a; */
+  height: fit-content;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 50px;
+}
+.phase2-left {
+  background-color: var(--background);
+  /* background-color: #232323; */
+  color: var(--color);
+  display: grid;
+  place-content: center;
+  gap: 10px;
+  font-family: "netflix bold sans";
+  font-size: x-large;
+  padding: 0 20px;
+}
+.phase2-left h5 {
+  font-family: "netflix normal sans";
+  font-size: large;
+}
+
+.phase2-right .imageBox {
+  position: relative;
+  /* background-color: rgb(255, 145, 0); */
+  display: grid;
+  /* place-content: center; */
+  width: 100%;
+}
+
+.p2img {
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+
+.p2video {
+  position: absolute;
+  z-index: 0;
+  top: 20%;
+  left: 0%;
+  max-height: 56%; /*This is important*/
+  width: 100%;
+}
+
+.phase3 {
+  background-color: var(--background);
+  /* background-color: blue; */
+  height: fit-content;
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 0 50px;
+}
+
+.phase3-left {
+  position: relative;
+  /* background-color: violet; */
+  height: 100%;
+  width: 100%;
+  display: grid;
+}
+
+.phase3-left .mobile {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-height: 100%;
+}
+
+.box {
+  background-color: black;
+  position: absolute;
+  z-index: 100;
+  width: 70%;
+  min-height: 25%;
+  top: 64%;
+  left: 15%;
+  display: grid;
+  border: 1px solid grey;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cover {
+  position: absolute;
+  height: 90%;
+  /* min-height: 90%; */
+  max-width: 20%;
+  top: 4%;
+  left: 2%;
+}
+
+.box p {
+  color: var(--color);
+  position: relative;
+  top: 40%;
+  left: 20%;
+  font-family: "netflix normal sans";
+}
+
+.box span {
+  color: #0071eb;
+}
+
+.box .gif {
+  position: absolute;
+  right: 3%;
+  top: 18%;
+  width: 15%;
+}
+
+.phase3-right {
+  /* background-color: blueviolet; */
+  color: var(--color);
+  display: grid;
+  place-content: center;
+  gap: 10px;
+  padding: 0 20px;
+  font-family: "netflix bold sans";
+  font-size: x-large;
+}
+
+.phase3-right h5 {
+  font-family: "netflix normal sans";
+}
+
+.phase4 {
+  background-color: var(--background);
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 0 50px;
+}
+
+.phase4-left {
+  /* background-color: #03264b; */
+  color: var(--color);
+  display: grid;
+  place-content: center;
+  font-family: "netflix bold sans";
+  font-size: x-large;
+  padding: 0 20px;
+}
+
+.phase4-left h5 {
+  font-family: "netflix normal sans";
+  font-size: large;
+}
+
+.phase4-right {
+  /* background-color: #0071eb; */
+  position: relative;
+  /* height: 100%; */
+  width: 100%;
+  display: grid;
+  padding-bottom: 20%;
+}
+
+.p4img {
+  position: relative;
+  width: 100%;
+  top: 20%;
+  z-index: 10;
+}
+.p4vid {
+  position: absolute;
+  width: 100%;
+  max-height: 37%;
+  top: 23%;
+  z-index: 0;
+  right: 1%;
+}
+
+.phase5 {
+  background: var(--background);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 0 50px;
+}
+
+.phase5-left {
+  display: grid;
+  place-content: center;
+  padding-bottom: 70px;
+}
+
+.p5img {
+  max-width: 100%;
+}
+
+.phase5-right {
+  color: var(--color);
+  display: grid;
+  place-content: center;
+  font-family: "netflix bold sans";
+  font-size: x-large;
+  padding: 0 50px;
+}
+
+.phase5-right h5 {
+  font-family: "netflix normal sans";
+  font-size: large;
+}
+
+.phase6 {
+  padding: 0 50px;
+  font-family: "netflix bold sans";
+  font-size: larger;
+  text-align: center;
+  padding-top: 100px;
+  color: var(--color);
+  background-color: var(--background);
+}
+
+.phase6 .p6theader {
+  font-family: "netflix bold sans";
+  font-size: xx-large;
+  font-weight: 900;
+}
+
+.accordion {
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 100px 200px;
+  padding-top: 20px;
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+}
+
+.accordion-header {
+  background-color: #2d2d2d;
+  font-family: "netflix normal sans";
+  padding: 30px;
+  cursor: pointer;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: end;
+  font-size: larger;
+}
+.accImg {
+  transform: rotate(90deg);
+}
+
+.accImg.active {
+  transform: rotate(50deg);
+  transition: 0.1s all;
+}
+
+.accordion-header h5 {
+  /* background-color: var(--background);
+  color: #ccc; */
+  width: 100%;
+  display: block;
+  justify-content: start;
+  margin: auto;
+}
+
+.accordion-header:hover {
+  background-color: #3a3a3a;
+}
+
+.accordion-content {
+  background-color: #2d2d2d;
+  padding: 20px;
+  display: none;
+  text-align: left;
+  font-family: "netflix normal sans";
+  margin-top: 2px;
+  font-size: larger;
+  word-spacing: 5px;
+}
+
+.accordion-item.active .accordion-content {
+  display: block;
+}
+
+.accordion-item.active .accImg {
+  transform: rotate(50deg);
+}
+
+.p6bheader {
+  font-family: "netflix normal sans";
+  font-size: large;
+  font-weight: 100;
+}
+
+.emailBtn {
+  width: 100%;
+  height: 100%;
+  /* background-color: #0071eb; */
+  display: grid;
+  grid-auto-flow: column;
+  place-content: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.int-btn {
+  /* background-color: red; */
+  height: 50px;
+  width: 30vmax;
+}
+
+.int-btn input {
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  color: var(--color);
+  background-color: #0f0f0fb0;
+  font-size: large;
+}
+
+.int-btn input::placeholder {
+  color: var(--color);
+}
+
+.btn {
+  /* background-color: violet; */
+  width: 10vmax;
+}
+
+.btn button {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 6px;
+  background-color: var(--nf-redcolor);
+  color: var(--color);
+  font-size: large;
+  cursor: pointer;
+}
+
+.footer {
+  width: 100%;
+  display: grid;
+  /* grid-template-columns: repeat(5, 10rem); */
+  /* grid-template-columns: repeat(10, 10rem); */
+  grid-template-rows: 50px, repeat(7, 2rem);
+  grid-template-rows: 100px, 1fr;
+  gap: 10px;
+  /* background: rgb(245, 129, 129); */
+  padding: 0 50px;
+  background-color: var(--background);
+  padding-bottom: 50px;
+  font-family: "netflix normal sans";
+}
+
+.footer .row {
+  /* background-color: #aeb8c2; */
+  display: grid;
+  grid-auto-flow: column;
+  background-color: #000;
+}
+
+.list0 {
+  background-color: var(--background);
+  color: grey;
+  padding-top: 20px;
+  padding-left: 10px;
+  list-style: none;
+  text-align: start;
+  padding-bottom: 10px;
+}
+
+.list1 {
+  display: grid;
+  grid-auto-flow: column;
+  place-content: start space-between;
+  padding-right: 100px;
+  padding-left: 10px;
+  padding-bottom: 2px;
+}
+
+.list0 a,
+.list1 a {
+  color: grey;
+}
+
+.select {
+  position: relative;
+  padding: 10px;
+  padding-left: 0;
+}
+
+.select select {
+  padding: 8px 25px;
+  background-color: #0f0f0fb0;
+  color: var(--color);
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.list3 {
+  position: relative;
+}
+
+.lsvg2 img {
+  position: absolute;
+  left: 0.3%;
+  top: 36%;
+  z-index: 10;
+}
+
+@media (max-width: 400) {
+  /* .box p {
+    top: 20%;
+    font-size: 2vmin;
+  } */
+}
+
+@media (max-width: 600px) {
+  .phase1 .navBar {
+    padding: 0;
+    place-content: center;
+    grid-auto-flow: row;
+  }
+  .phase1 .input-btn {
+    grid-auto-flow: row;
+    place-content: start;
+    /* justify-content: center; */
+    gap: 1px;
+    margin: 0 10px;
+  }
+
+  .phase1 .phase1-center {
+    font-size: small;
+  }
+
+  .input-btn input {
+    width: 90vw;
+  }
+
+  .input-btn button {
+    display: block;
+    width: 50px;
+    height: 30px;
+    min-width: 50%;
+    padding-bottom: 40px;
+    font-size: 4vmin;
+  }
+
+  .phase2-right {
+    padding: 0 10px;
+  }
+
+  .phase3-left .box p {
+    top: 3vmax;
+    left: 14vmin;
+    font-size: 2vmin;
+  }
+}
+
+@media (max-width: 1200px) {
+  .phase1 {
+    padding: 0;
+  }
+
+  .phase1 .navBar {
+    padding: 0;
+  }
+
+  .phase2 {
+    padding: 0;
+  }
+
+  .phase3 {
+    padding: 0;
+  }
+
+  .phase4 {
+    padding: 0;
+  }
+
+  .phase5 {
+    padding: 0;
+  }
+
+  .phase6 {
+    padding: 0;
+  }
+  .footer {
+    padding: 0;
+  }
+
+  .input-btn button {
+    padding-bottom: 34px;
+  }
+  .input-btn button {
+    overflow: hidden;
+  }
+
+  .phase1 .phase1-center {
+    padding: 0;
+    line-height: 5vmax;
+  }
+
+  .phase2,
+  .phase3,
+  .phase4,
+  .phase5 {
+    /* max-height: 100vh; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr;
+  }
+
+  .phase2-left,
+  .phase4-left,
+  .phase5-right {
+    text-align: center;
+  }
+
+  .phase3-right,
+  .phase5-right {
+    grid-row: 1; /*for moving to row 1*/
+    text-align: center;
+  }
+
+  .phase3-left,
+  .phase5-left {
+    grid-row: 2;
+  }
+
+  .phase2-right {
+    padding: 0 10px;
+  }
+
+  .box p {
+    top: 30%;
+    font-size: 3vmin;
+  }
+  .accordion {
+    padding: 20px;
+  }
+
+  .emailBtn {
+    width: 100%;
+    height: 100%;
+    /* background-color: #0071eb; */
+    display: grid;
+    grid-auto-flow: row;
+    place-content: center;
+    gap: 10px;
+    padding: 20px 0;
+  }
+
+  .btn {
+    width: 20vmax;
+    height: 5vmax;
+    /* background-color: blue; */
+    margin-left: 40px;
+  }
+
+  .footer {
+    width: 100%;
+    display: grid;
+    /* grid-template-columns: repeat(5, 10rem); */
+    /* grid-template-rows:1px, repeat(7, 2rem) ; */
+    grid-template-columns: 1fr 1fr;
+    /* background: rgb(245, 129, 129); */
+    gap: 10px;
+  }
+
+  .list1 {
+    grid-auto-flow: row;
+    gap: 0;
+    place-content: start;
+    padding-right: 0;
+  }
+
+  .select img {
+    position: absolute;
+    left: 3px;
+    top: 15px;
+    z-index: 99;
+  }
+}
