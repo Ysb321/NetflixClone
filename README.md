@@ -15,7 +15,8 @@ Customization Options: The clone offers customization options, allowing develope
 
 To explore the Netflix Starting Page Clone:
 
-**Clone the Repository**: Clone the GitHub repository containing the project files to your local machine.
+**Clone the Repository**: Clone the GitHub repository containing the project files to your local machine. 
+
 **Open Index.html**: Navigate to the project directory and open the index.html file in your preferred web browser to launch the clone.
 
 # Technologies Used:
