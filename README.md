@@ -1,6 +1,6 @@
 ![GIF](assests/desktop/netflix.gif)
 
-# [![Netflix](favicon.ico)](https://ysb321.github.io/NetflixClone/) NetflixClone 
+# [![Netflix](favicon.ico)](https://ysb321.github.io/NetflixClone/)Clone 
 
 
 
