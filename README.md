@@ -19,5 +19,7 @@ To explore the Netflix Starting Page Clone:
 # Technologies Used:
 
 **HTML5**: Markup language for structuring the content and layout of the clone.
+
 **CSS3**: Stylesheets for defining the visual presentation and responsiveness of the clone.
+
 **JavaScript**: Programming language for implementing interactive features and dynamic content retrieval.
