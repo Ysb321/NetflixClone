@@ -1,8 +1,8 @@
 ![GIF](assests/desktop/netflix.gif)
 
-# NetflixClone 
+# [![Netflix](favicon.ico)](https://ysb321.github.io/NetflixClone/) NetflixClone 
 
-[![Netflix](favicon.ico)](https://ysb321.github.io/NetflixClone/)
+
 
 
 The Netflix Login-page clone is a stunning web application that mirrors the design, functionality, and user experience of the original Netflix platform. Developed using a combination of HTML, CSS, and JavaScript
